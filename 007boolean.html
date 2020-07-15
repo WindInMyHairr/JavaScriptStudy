@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>boolean/undefined/null</title>
+	<script type="text/javascript">
+		var flag = true;
+		var flag1 = false;
+		console.log(flag+1); //true 参与加法运算当1看
+		console.log(flag1+1); // false 参与加法运算当0看
+
+		//如果一个变量声明未赋值，就是undefined 未定义数据类型
+		var haha;
+		console.log(haha);
+		var hehe = undefined;
+		console.log(hehe + '???');
+		console.log(hehe+1); // NaN undefined和数字相加
+
+		//null
+		var dd = null;
+		console.log(dd + "哈哈");
+		console.log(dd + 1);// null + 数字 = 该数字
+	</script>
+</head>
+<body>
+	<h1>案例：显示年龄</h1>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>数据类型转换</title>
+	<script type="text/javascript">
+		// 1. number转换为字符串型 
+			// 1.变量.toString()
+		var num = 10;
+		var str = num.toString();
+		console.log(str);
+		console.log(typeof str); // 字符串类型在控制台显示为黑色
+			// 2. String()
+		console.log(String(num));
+			// 3. 利用+拼接字符串方法实现转换效果
+		console.log(num + ""); // 隐式转换（常用这种方法）
+
+
+		// 2. 转换为数字型(重点)
+			// 1. parseInt(变量) 把字符型转换为数字型，但只能是整数
+		var age = prompt("请输入您的年龄");
+		console.log(parseInt(age)); // 数字型在控制台显示为蓝色
+		console.log(parseInt(3.12213));
+		console.log(parseInt(3.99999));
+		console.log(parseInt("120px")); // 去掉单位
+		console.log(parseInt("sf120px")); // NaN
+			// 2. parseFloat(变量) 把字符型转换为数字型，得到小数，浮点数
+		console.log(parseFloat('3.14')); // 3.14
+		console.log(parseFloat(3.12213));
+		console.log(parseFloat(3.99999));
+		console.log(parseFloat("120px")); // 去掉单位
+		console.log(parseFloat("sf120px")); // NaN
+			//3.利用Number(变量)
+		var str = '123';
+		console.log(Number(str));
+		console.log(Number('12'));
+			// 4. 利用算术运算 - * / 隐式转换
+		console.log('12' - 0);
+		console.log('128' - '129');
+		console.log('128'- 1);
+	</script>
+</head>
+<body>
+	<h1>数据类型转换</h1>
+</body>
+</html>
