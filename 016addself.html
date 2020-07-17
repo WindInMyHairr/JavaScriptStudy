@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>变量自增和自减</title>
+	<script type="text/javascript">
+		// 1. 想要一个变量自己加1 
+		var num = 1;
+		num = num + 1;   // ++num --num
+		console.log(num); // 2
+
+		// 2. 递增递减运算符必须配合变量使用
+
+		// 3. 前置递增运算符 ++ 写在变量前面
+		var age = 10;
+		++age;
+		console.log(age);
+		age++;
+		console.log(age);
+
+		// 4. 先自加，后返回值
+		var p =10;
+		console.log(++p + 10); // 21
+
+		// 5. 后置递增运算符 ++写在后面
+		//前置和后置单独使用效果一样
+		var a = 10;
+		a++;
+		console.log(a); // 11
+
+		//  6. 后置递增运算符，先返回原值，后自加一
+		var b = 10;
+		console.log(b++ + 10); //20
+		console.log(b);  // 11
+	</script>
+</head>
+<body>
+	<h1>变量自增自减</h1>
+</body>
+</html>
